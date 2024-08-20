@@ -103,6 +103,12 @@ public abstract class MilkFluid extends FlowableFluid {
         public boolean isStill(FluidState state) {
             return false;
         }
+
+        @Override
+        protected int getMaxFlowDistance(WorldView world) {
+            // TODO Auto-generated method stub
+            throw new UnsupportedOperationException("Unimplemented method 'getMaxFlowDistance'");
+        }
     }
 
     public static class Still extends MilkFluid {
@@ -118,6 +124,12 @@ public abstract class MilkFluid extends FlowableFluid {
 
         public boolean isStill(FluidState state) {
             return true;
+        }
+
+        @Override
+        protected int getMaxFlowDistance(WorldView world) {
+            // TODO Auto-generated method stub
+            throw new UnsupportedOperationException("Unimplemented method 'getMaxFlowDistance'");
         }
     }
 }
